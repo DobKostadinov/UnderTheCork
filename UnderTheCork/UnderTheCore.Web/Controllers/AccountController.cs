@@ -9,6 +9,7 @@ using Microsoft.Owin.Security;
 
 using UnderTheCore.Web.Models;
 using UnderTheCork.Data.Models;
+using UnderTheCore.Web.App_Start;
 
 namespace UnderTheCore.Web.Controllers
 {

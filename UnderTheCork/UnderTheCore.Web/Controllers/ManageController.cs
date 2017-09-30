@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using UnderTheCore.Web.Models;
+using UnderTheCore.Web.App_Start;
 
 namespace UnderTheCore.Web.Controllers
 {
