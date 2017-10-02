@@ -13,7 +13,10 @@ namespace UnderTheCore.Web.App_Start
     using Ninject.Extensions.Conventions;
 
     using UnderTheCork.Data.Repositories;
+    using UnderTheCork.Data.UnitOfWork;
+
     using System.Data.Entity;
+
     using UnderTheCork.Data;
 
     public static class NinjectWebCommon 
@@ -75,6 +78,7 @@ namespace UnderTheCore.Web.App_Start
 
             kernel.Bind(typeof(DbContext), typeof(UnderTheCorkSqlDbContext)).To<UnderTheCorkSqlDbContext>().InRequestScope();
             kernel.Bind(typeof(IEfRepostory<>)).To(typeof(EfRepostory<>));
+            kernel.Bind<IEfUnitOfWork>().To<EfUnitOfWork>();
         }        
     }
 }
