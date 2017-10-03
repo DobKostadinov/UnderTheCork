@@ -7,9 +7,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 
-using UnderTheCork.Web.Models;
 using UnderTheCork.Data.Models;
 using UnderTheCork.Web.App_Start;
+using UnderTheCork.Web.Models.AccountViewModels;
 
 namespace UnderTheCork.Web.Controllers
 {

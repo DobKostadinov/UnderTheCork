@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using UnderTheCork.Web.Models;
 using UnderTheCork.Web.App_Start;
+using UnderTheCork.Web.Models.ManageViewModels;
 
 namespace UnderTheCork.Web.Controllers
 {
