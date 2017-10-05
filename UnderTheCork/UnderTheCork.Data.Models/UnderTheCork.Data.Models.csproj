@@ -56,12 +56,26 @@
     <Compile Include="Abstracts\BaseDataModel.cs" />
     <Compile Include="Contracts\IAuditable.cs" />
     <Compile Include="Contracts\IDeletable.cs" />
+    <Compile Include="Country.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="ReviewComment.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="Wine.cs" />
+    <Compile Include="WineImage.cs" />
+    <Compile Include="WineReview.cs" />
+    <Compile Include="Winery.cs" />
+    <Compile Include="Enums\WineType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnderTheCork.Common\UnderTheCork.Common.csproj">
+      <Project>{257FB261-5C84-4A38-B8A4-FC0965A4D65B}</Project>
+      <Name>UnderTheCork.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

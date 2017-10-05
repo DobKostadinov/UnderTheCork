@@ -14,7 +14,7 @@ namespace UnderTheCork.Data.Models.Abstracts
         }
 
         [Key]
-        Guid Id { get; set; }
+        public Guid Id { get; set; }
 
         [DataType(DataType.DateTime)]
         public DateTime? CreatedOn { get; set; }
