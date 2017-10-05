@@ -7,11 +7,33 @@ using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data
 {
-    public class UnderTheCorkSqlDbContext : IdentityDbContext<User>
+    public class UnderTheCorkSqlDbContext : IdentityDbContext<User>, IUnderTheCorkSqlDbContext
     {
         public UnderTheCorkSqlDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+        }
+
+        public IDbSet<Country> Countries { get; set; }
+
+        public IDbSet<Region> Regions { get; set; }
+
+        public IDbSet<Winery> Wineries { get; set; }
+
+        public IDbSet<Wine> Wines { get; set; }
+
+        public IDbSet<WineReview> WineReviews { get; set; }
+
+        public IDbSet<ReviewComment> ReviewComments { get; set; }
+
+        public IDbSet<WineImage> WineImages { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Wine>()
+                .HasOptional(i => i.WineImage)
+                .WithRequired(w => w.Wine);
         }
 
         public static UnderTheCorkSqlDbContext Create()
