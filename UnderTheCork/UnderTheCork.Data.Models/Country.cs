@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 using UnderTheCork.Common;
 using UnderTheCork.Data.Models.Abstracts;
+using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Models
 {
-    public class Country : BaseDataModel
+    public class Country : BaseDataModel, ICountry
     {
         private ICollection<Region> regions;
 

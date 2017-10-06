@@ -1,9 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
+using UnderTheCork.Data.Models.Contracts;
+
 namespace UnderTheCork.Data.Models
 {
-    public class WineImage
+    public class WineImage : IWineImage
     {
         public WineImage()
         {

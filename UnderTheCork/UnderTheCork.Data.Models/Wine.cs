@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 using UnderTheCork.Common;
 using UnderTheCork.Data.Models.Abstracts;
+using UnderTheCork.Data.Models.Contracts;
 using UnderTheCork.Data.Models.Enums;
 
 namespace UnderTheCork.Data.Models
 {
-    public class Wine : BaseDataModel
+    public class Wine : BaseDataModel, IWine
     {
         private ICollection<WineReview> reviews;
 

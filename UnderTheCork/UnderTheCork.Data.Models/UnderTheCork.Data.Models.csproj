@@ -55,7 +55,16 @@
   <ItemGroup>
     <Compile Include="Abstracts\BaseDataModel.cs" />
     <Compile Include="Contracts\IAuditable.cs" />
+    <Compile Include="Contracts\IBaseDataModel.cs" />
+    <Compile Include="Contracts\ICountry.cs" />
     <Compile Include="Contracts\IDeletable.cs" />
+    <Compile Include="Contracts\IIdentifiable.cs" />
+    <Compile Include="Contracts\IRegion.cs" />
+    <Compile Include="Contracts\IReviewComment.cs" />
+    <Compile Include="Contracts\IWine.cs" />
+    <Compile Include="Contracts\IWineImage.cs" />
+    <Compile Include="Contracts\IWineReview.cs" />
+    <Compile Include="Contracts\IWinery.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Region.cs" />

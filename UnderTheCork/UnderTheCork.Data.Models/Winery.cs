@@ -5,10 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 using UnderTheCork.Common;
 using UnderTheCork.Data.Models.Abstracts;
+using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Models
 {
-    public class Winery : BaseDataModel
+    public class Winery : BaseDataModel, IWinery
     {
         private ICollection<Wine> wines;
 

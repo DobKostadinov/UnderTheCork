@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 using UnderTheCork.Common;
 using UnderTheCork.Data.Models.Abstracts;
+using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Models
 {
-    public class Region : BaseDataModel
+    public class Region : BaseDataModel, IRegion
     {
         private ICollection<Winery> wineries;
 

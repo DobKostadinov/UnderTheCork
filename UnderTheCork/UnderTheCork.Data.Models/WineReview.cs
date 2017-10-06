@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 
 using UnderTheCork.Common;
 using UnderTheCork.Data.Models.Abstracts;
+using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Models
 {
-    public class WineReview : BaseDataModel
+    public class WineReview : BaseDataModel, IWineReview
     {
         private ICollection<ReviewComment> comments;
 

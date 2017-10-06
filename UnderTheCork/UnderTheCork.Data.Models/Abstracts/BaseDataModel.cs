@@ -6,7 +6,7 @@ using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Models.Abstracts
 {
-    public abstract class BaseDataModel : IDeletable, IAuditable
+    public abstract class BaseDataModel : IBaseDataModel
     {
         public BaseDataModel()
         {
