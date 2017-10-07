@@ -6,9 +6,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-using UnderTheCork.Data;
 using UnderTheCork.Data.Models;
 using UnderTheCork.Web.App_Start;
+using UnderTheCork.Data.DbContexts;
 
 namespace UnderTheCork.Web
 {

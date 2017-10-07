@@ -3,12 +3,12 @@
     public class DataModelsConstants
     {
         // Country
-        public const int MinLengthCountryName = 3;
-        public const int MaxLengthCountryName = 20;
+        public const int MinLengthCountryName = 2;
+        public const int MaxLengthCountryName = 50;
 
         // Region
-        public const int MinLengthRegionName = 5;
-        public const int MaxLengthRegionName = 30;
+        public const int MinLengthRegionName = 3;
+        public const int MaxLengthRegionName = 50;
 
         // Winery
         public const int MinLengthWineryName = 1;

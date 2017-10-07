@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 
+using UnderTheCork.Data.DbContexts;
 using UnderTheCork.Data.Models.Contracts;
 
 namespace UnderTheCork.Data.Repositories

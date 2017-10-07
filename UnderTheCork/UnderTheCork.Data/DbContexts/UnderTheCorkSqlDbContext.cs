@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
+﻿using System;
 using System.Data.Entity;
 using System.Linq;
+
+using Microsoft.AspNet.Identity.EntityFramework;
+
 using UnderTheCork.Data.Models;
 using UnderTheCork.Data.Models.Contracts;
 
-namespace UnderTheCork.Data
+namespace UnderTheCork.Data.DbContexts
 {
     public class UnderTheCorkSqlDbContext : IdentityDbContext<User>, IUnderTheCorkSqlDbContext
     {

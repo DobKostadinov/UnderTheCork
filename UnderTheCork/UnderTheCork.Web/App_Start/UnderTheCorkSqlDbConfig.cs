@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-using UnderTheCork.Data;
+using UnderTheCork.Data.DbContexts;
 using UnderTheCork.Data.Migrations;
 
 namespace UnderTheCork.Web.App_Start

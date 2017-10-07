@@ -1,4 +1,6 @@
-﻿namespace UnderTheCork.Data.UnitOfWork
+﻿using UnderTheCork.Data.DbContexts;
+
+namespace UnderTheCork.Data.UnitOfWork
 {
     public class EfUnitOfWork : IEfUnitOfWork
     {

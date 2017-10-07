@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
-namespace UnderTheCork.Data
+namespace UnderTheCork.Data.DbContexts
 {
     public interface IUnderTheCorkSqlDbContext
     {

@@ -16,6 +16,7 @@ namespace UnderTheCork.Web.App_Start
     using UnderTheCork.Data;
     using UnderTheCork.Data.UnitOfWork;
     using AutoMapper;
+    using UnderTheCork.Data.DbContexts;
 
     public static class NinjectWebCommon 
     {
@@ -74,7 +75,8 @@ namespace UnderTheCork.Web.App_Start
                  .BindDefaultInterface();
             });
 
-            kernel.Bind(typeof(DbContext), typeof(UnderTheCorkSqlDbContext)).To<UnderTheCorkSqlDbContext>().InRequestScope();
+            //kernel.Bind(typeof(DbContext), typeof(UnderTheCorkSqlDbContext)).To<UnderTheCorkSqlDbContext>().InRequestScope();
+            kernel.Bind<IUnderTheCorkSqlDbContext>().To<UnderTheCorkSqlDbContext>().InRequestScope();
             kernel.Bind(typeof(IEfRepostory<>)).To(typeof(EfRepostory<>));
             kernel.Bind<IEfUnitOfWork>().To<EfUnitOfWork>();
             kernel.Bind<IMapper>().ToMethod(x => Mapper.Instance).InSingletonScope();
